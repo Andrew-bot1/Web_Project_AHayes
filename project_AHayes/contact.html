@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Misty Mountains Inn</title>
+	<meta charset="utf-8">
+	<link href="styles/casita.css" rel="stylesheet">
+	<link rel="icon" href="images/logo3.png" type="image/x-icon">
+</head>
+<body>
+<div id="wrapper">
+	<header>
+      <h1>The Misty Mountains Inn</h1>
+	</header>
+	<nav>
+		<ul> 
+			<li><a href="index.html">Home</a></li>
+			<li><a href="rooms/cozy_den.html">Cozy Den</a></li>
+			<li><a href="rooms/mountain_peak.html">Mountain Peak</a></li>
+			<li><a href="events/weekend.html">Weekend Events</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+  <main>
+  <h2>Contact Page </h2>
+	<div>
+		<p>Fill out the form below to book a room! Our team will then be in contact with you shortly.</p><br>
+	</div>
+	<div>
+		<!--Contact Form-->
+		<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+			<label for="myName">Name: </label>
+			<input type="text" id="myName" name="myName" required>
+			
+			<label for="myEmail">E-mail: </label>
+			<input type="email" id="myEmail" name="myEmail" required>
+			
+			<label for="myStart">Check In Date: </label>
+			<input type="date" id="myStart" name="myStart" required>
+			
+			<label for="myStart">Check Out Date: </label>
+			<input type="date" id="myEnd" name="myStart" required>
+			
+			<label for="myStart">Room: </label>
+			<select name="rooms" id="myRoom">
+			  <option value="">--Please choose which room you want--</option>
+			  <option value="Cozy Den Room">Cozy Den Room</option>
+			  <option value="Mountain Peak Room">Mountain Peak Room</option>
+			</select>
+			
+
+			<label for="comments">Comments: </label>
+			<textarea name="comments" id="comments" rows="2" cols="40">--Accommodations or comments--</textarea>
+			
+			<label for="submit"> </label>
+			<input id="submit" type="submit" value="Apply Now">
+
+		</form>
+	</div>
+
+  </main>
+  <footer>
+  Copyright &copy; 2024 WebMaster
+  </footer>
+</div>
+</body>
+</html>
