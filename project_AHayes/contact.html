@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,6 +8,8 @@
 	<link href="styles/casita.css" rel="stylesheet">
 	<link rel="icon" href="images/logo3.png" type="image/x-icon">
 	<script src="java.js" defer></script>
+	<!--add 2nd js-->
+	<script src="objects.js" defer></script>
 </head>
 <body>
 <div id="wrapper">
@@ -29,6 +32,12 @@
 	</div>
 	<div>
 		<!--Contact Form-->
+		<!--Case 5 added budget for user class-->
+		<select name="budget" id="myBudget">
+			<option value="">--Please choose how much you want to spend a night--</option>
+			<option value=50>50</option>
+			<option value=100>100</option>
+		  </select>
 		<form method="post" action="https://webdevbasics.net/scripts/demo.php">
 			<label for="myName">Name: </label>
 			<input type="text" id="myName" name="myName" required>
@@ -49,8 +58,12 @@
 			  <option value="Mountain Peak Room">Mountain Peak Room</option>
 			</select>
 			
+
 			<label for="comments">Comments: </label>
 			<textarea name="comments" id="comments" rows="2" cols="40">--Accommodations or comments--</textarea>
+			
+			
+
 		</form>
 	</div>
 
