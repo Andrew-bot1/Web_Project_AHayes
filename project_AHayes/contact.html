@@ -13,7 +13,7 @@
 	<script src="objects.js" defer></script>
 	<!--add script for maps java-->
 	<script src="maps.js" defer></script>
-	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyA4-a0-Cky31xCiqy6oty-oRzoZDxLqg&callback=initMap"></script> 
+	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyA4-a0-Cky31xCiqy6oty-oRzoZDxLqg&callback=initMap" defer></script> 
 </head>
 <body>
 <div id="wrapper">
@@ -66,17 +66,24 @@
 			<label for="comments">Comments: </label>
 			<textarea name="comments" id="comments" rows="2" cols="40">--Accommodations or comments--</textarea>
 			
+			<label for="submit"> </label>
+ 			<input id="submit" type="submit" value="Apply Now">
 			
 
 		</form>
 	</div>
 	<!--case 6 add map-->
 	<div>
-		<!--add selection for direction-->
-		<select name="directions" id="myDirections">
+		<!--add selection for destination-->
+		<select name="destination" id="myDestination">
 			<option value="Inn">Misty Mountains Inn</option>
-			<option value="Mountain Peak Room">Mountain Peak Room</option>
+			<option value="jam">Jam Jam's Spot (sandwich shop)</option>
+			<option value="roses">Rose's Cafe (breakfast)</option>
+			<option value="park">Denali National Park and Preserve</option>
 		  </select>
+		  <!--button to switch destinations-->
+		  <button type="button" id="goButton">Go</button>
+
 		<div id="displayMap"></div>
         <div id="routeBox"></div>
        
